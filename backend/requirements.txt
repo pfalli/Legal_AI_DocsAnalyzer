@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+httpx
+sqlalchemy
+psycopg2-binary
+python-docx
+pdfplumber
+python-multipart
+fastapi.middleware.cors
+python-dotenv

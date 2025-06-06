@@ -1,0 +1,125 @@
+:root {
+  --main-bg: #1f3c5f;
+  --box-bg: #e5e7ec;
+  --accent: #3a86ff;
+  --box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  --slogan-shadow: 0 4px 20px #3a86ff, 0 1.5px 0 #fff, 0 2.5px 0 #3a86ff;
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+  color: #fff;
+  background-color: var(--main-bg);
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  /* background: var(--main-bg); */ /* You can keep this as a fallback or remove it */
+  background-image: url('/LegalAI.jpg'); /* Path relative to the public folder */
+  background-size: cover; /* Cover the entire viewport */
+  background-position: center center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-attachment: fixed; /* Keep the background fixed during scroll */
+  /* Add a semi-transparent overlay if the image makes text hard to read */
+  /* position: relative; */ /* Needed if you add an overlay ::before or ::after */
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+h1, h2, h3 {
+  color: #fff;
+  text-shadow: var(--slogan-shadow);
+}
+
+.slogan-3d {
+  font-size: 2.5em;
+  font-weight: bold;
+  color: #fefefe;
+  letter-spacing: 2px;
+  /* text-shadow:
+    0 4px 20px #e5ff3a,
+    0 1.5px 0 #fff,
+    0 2.5px 0 #3a86ff,
+    2px 2px 0 #1a1a40,
+    4px 4px 10px #3a86ff; */
+  /* animation: float 2.5s ease-in-out infinite alternate; */
+}
+
+@keyframes float {
+  0% { transform: translateY(0) scale(1); }
+  100% { transform: translateY(-10px) scale(1.04); }
+}
+
+.content-box {
+  background: var(--box-bg);
+  color: #0a2342;
+  border-radius: 18px;
+  box-shadow: var(--box-shadow);
+  padding: 2.5rem 2rem;
+  margin: 1.5rem auto;
+  max-width: 700px;
+  transition: transform 0.3s cubic-bezier(.25,.8,.25,1), box-shadow 0.3s;
+  animation: fadeInUp 0.8s cubic-bezier(.25,.8,.25,1);
+}
+
+.content-box:hover {
+  transform: translateY(-6px) scale(1.02);
+  box-shadow: 0 16px 48px 0 rgba(58,134,255,0.25);
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.7em 1.5em;
+  font-size: 1.1em;
+  font-weight: 600;
+  background: linear-gradient(90deg, #3a86ff 0%, #00b4d8 100%);
+  color: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #3a86ff44;
+  transition: background 0.3s, transform 0.2s;
+}
+button:hover {
+  background: linear-gradient(90deg, #00b4d8 0%, #3a86ff 100%);
+  transform: scale(1.05);
+}
+
+nav {
+  margin: 1.5rem 0;
+}
+
+a {
+  color: #3a86ff;
+  font-weight: 500;
+  text-decoration: none;
+}
+a:hover {
+  color: #00b4d8;
+}
+
+@media (max-width: 700px) {
+  .content-box {
+    padding: 1.2rem 0.5rem;
+  }
+  .slogan-3d {
+    font-size: 1.5em;
+  }
+}
