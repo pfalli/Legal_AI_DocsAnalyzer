@@ -1,14 +1,17 @@
 # The Legal AI Assistant to analyze your Legal Documents
+
+<img src="frontend/public/LegalAI.jpg" alt="LegalDocAnalyzer_AI Logo" width="300"/>
+
 ![architecture.png](architecture.png)
 
-# to run
+## to run
 
 - activate python environment
 source .venv/bin/activate
 
 uvicorn backend.main:app --reload --port 5000
 
-# POSTGRESQL
+## POSTGRESQL
 sudo apt install postgresql postgresql-contrib
 
 sudo service postgresql status
@@ -24,7 +27,7 @@ psql -U clausemate_user -d clausemate_db -h localhost
 // to cancel database enter psql
 TRUNCATE TABLE documents CASCADE;
 
-# SQLAlchemy Documentation
+## SQLAlchemy Documentation
 
 Declare Models
 Create an Engine
