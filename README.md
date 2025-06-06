@@ -1,5 +1,5 @@
 # The Legal AI Assistant to analyze your Legal Documents
-![architecture.png](frontend/public/LegalAI.jpg)
+![architecture.png](architecture.png)
 
 # to run
 
