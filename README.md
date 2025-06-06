@@ -1,6 +1,9 @@
 # The Legal AI Assistant to analyze your Legal Documents
 
-<img src="architecture.png" alt="LegalDocAnalyzer_AI Logo" width="6700"/>
+![Demo Animation](demo.gif)
+
+<img src="architecture.png" alt="LegalDocAnalyzer_AI" width="600"/>
+
 
 ## to run
 
